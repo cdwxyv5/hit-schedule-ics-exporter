@@ -3,11 +3,11 @@
     "description": "导出课程表为ics格式",
     "version": "0.1",
     "minimum_chrome_version": "16.0.884",
-    "permissions": ["http://jwts.hit.edu.cn/*"],
+    "permissions": ["http://jwc2.yangtzeu.edu.cn:8080/"],
     "manifest_version": 2,
     "content_scripts": [
         {
-            "matches": ["http://jwts.hit.edu.cn/kbcx/queryGrkb*"],
+            "matches": ["http://jwc2.yangtzeu.edu.cn:8080/kb.aspx"],
             "js": ["doit.js"],
             "all_frames": true
         }
